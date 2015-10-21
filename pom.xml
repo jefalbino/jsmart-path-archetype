@@ -11,7 +11,7 @@
  
     <groupId>com.jsmartframework</groupId>
     <artifactId>jsmart-path-archetype</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>1.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
   
     <name>JSmart Dynamic Path Archetype</name>
