@@ -12,7 +12,7 @@
 
     <resources>
         <resource>src/main/resources/texts.properties</resource>
-        <resource>src/main/webapp/js/room.js</resource>
+        <resource>src/main/webapp/js/msgs.js</resource>
         <resource>src/main/webapp/css/style.css</resource>
         <resource>src/main/webapp/WEB-INF/room.jsp</resource>
         <resource>src/main/webapp/WEB-INF/webConfig.xml</resource>

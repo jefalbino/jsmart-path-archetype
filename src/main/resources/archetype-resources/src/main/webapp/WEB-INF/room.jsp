@@ -39,5 +39,5 @@
     </body>
 
      <!-- Handle callbacks and async events -->
-    <script type="text/javascript" src="/js/room.js"></script>
+    <script type="text/javascript" src="/js/msgs.js"></script>
 </html>

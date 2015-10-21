@@ -26,7 +26,7 @@ function roomMessageSent() {
 
 function updateRoomMessage(event) {
     var room = $('#room-msgs');
-    var msgs = $.parseJSON(event.data);
+    var msgs = jQuery.parseJSON(event.data);
 
     for (var i = 0; i < msgs.length; i++) {
         var span = room.find('div[id="msg-' + i + '"]');
