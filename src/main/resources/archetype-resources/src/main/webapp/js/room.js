@@ -16,7 +16,7 @@ function sendRoomMessage(event) {
         $('#msg-btn').click();
 
         // Scroll div to bottom
-        $("#room-msgs").animate({scrollTop: $('#room-msgs')[0].scrollHeight}, 1000);
+        $('#room-msgs').animate({scrollTop: $('#room-msgs')[0].scrollHeight}, 1000);
     }
 }
 
