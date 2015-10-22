@@ -14,9 +14,6 @@ $(window).on("beforeunload", function() {
 function sendRoomMessage(event) {
     if (event.keyCode == 13) {
         $('#msg-btn').click();
-
-        // Scroll div to bottom
-        $('#room-msgs').animate({scrollTop: $('#room-msgs')[0].scrollHeight}, 1000);
     }
 }
 
@@ -33,6 +30,9 @@ function updateRoomMessage(event) {
 
         if (!span || span.length == 0) {
             room.append($('<div id="msg-' + i + '"></div>').text(msgs[i]));
+
+            // Scroll div to bottom
+            $('#room-msgs').animate({scrollTop: $('#room-msgs')[0].scrollHeight}, 1000);
         }
     }
 }

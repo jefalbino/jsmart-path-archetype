@@ -14,24 +14,20 @@ public class SpringService {
     private Map<String, List<String>> rooms = new ConcurrentHashMap<>();
 
     public void putMessage(final String roomName, final String message) {
-        synchronized (roomName) {
-            List<String> messages = rooms.get(roomName);
+        List<String> messages = rooms.get(roomName);
 
-            if (messages == null) {
-                messages = new ArrayList<>();
-                rooms.put(roomName, messages);
-            }
-            messages.add(message);
+        if (messages == null) {
+            messages = new ArrayList<>();
+            rooms.put(roomName, messages);
         }
+        messages.add(message);
     }
 
     public List<String> getMessages(final String roomName) {
-        synchronized (roomName) {
-            if (rooms.containsKey(roomName)) {
-                return rooms.get(roomName);
-            }
-            return Collections.emptyList();
+        if (rooms.containsKey(roomName)) {
+            return rooms.get(roomName);
         }
+        return Collections.emptyList();
     }
 
 }
