@@ -16,7 +16,7 @@ import java.util.List;
 import javax.servlet.AsyncContext;
 import javax.servlet.http.HttpServletRequest;
 
-@AsyncBean(asyncPath = "/msgs/*")
+@AsyncBean("/msgs/*")
 public class RoomAsync implements WebAsyncListener {
 
     private static final Gson GSON = new Gson();
